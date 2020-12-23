@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>CALCULATOR</h1>
+<form action="maytinh.html" method="get">
+    <input type="text" id="nhap1"><input type="text" id="nhap2"><br>
+    <button onclick="cong()">Addition(+)</button>
+    <button onclick="tru()">Subtraction(-)</button>
+    <button onclick="nhan()">Multiplication(X)</button>
+    <button onclick="chia()">Division(/)</button>
+</form>
+
+</body>
+</html>
+<script>
+    function cong(){
+        let resultphepcong;
+        let phepcong1 = +document.getElementById('nhap1').value;
+        let phepcong2 = +document.getElementById('nhap2').value;
+        resultphepcong = phepcong1 + phepcong2;
+        alert('Kết quả là:'+ resultphepcong);
+    }
+    function tru(){
+        let resultpheptru;
+        let pheptru1 = document.getElementById('nhap1').value;
+        let pheptru2 = document.getElementById('nhap2').value;
+        resultpheptru = pheptru1 - pheptru2;
+        alert('Kết quả là:'+ resultpheptru);
+    }
+    function nhan(){
+        let resultphepnhan;
+        let phepnhan1 = document.getElementById('nhap1').value;
+        let phepnhan2 = document.getElementById('nhap2').value;
+        resultphepnhan = phepnhan1 * phepnhan2;
+        alert('Kết quả là:'+ resultphepnhan);
+    }
+    function chia(){
+        let resultphepchia;
+        let phepchia1 = document.getElementById('nhap1').value;
+        let phepchia2 = document.getElementById('nhap2').value;
+        resultphepchia = phepchia1 / phepchia2;
+        alert('Kết quả là:'+ resultphepchia);
+    }
+</script>
